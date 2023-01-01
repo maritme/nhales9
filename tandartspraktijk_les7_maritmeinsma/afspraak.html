@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tandartsafspraak</title>
+    </head>
+    <body>
+        <h1>Tandartsafspraak</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis semper ex, sed gravida metus. Duis venenatis 
+            fermentum hendrerit. Nulla eu lectus ornare, elementum justo porta, bibendum justo. Curabitur tristique diam a euismod 
+            pharetra. Duis vitae ligula mauris. Nunc posuere nec magna at mollis. Fusce facilisis et orci et vulputate. Nulla a sapien 
+            in nibh fringilla tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+            Suspendisse sit amet venenatis ipsum. Curabitur fringilla quam non scelerisque tristique. Vivamus feugiat ligula ac urna 
+            ultricies pharetra. Nunc at sem aliquet, tristique tortor in, pellentesque lorem. Suspendisse velit purus, 
+            pellentesque sit amet lorem sed, eleifend lacinia nisi. 
+        </p>
+        <br>
+        <img src="tand_en_spiegel.png" alt="tand met spiegel" width="300">
+        <img src="patient_handen.jpg" alt="Tandartspatient met tandarts instrumenten" width="300">
+        <img src="gebit_flossdraad.jpeg" alt="Nepgebit met floss" width="300">
+        <br>
+        <br>
+        <form action="https://formspree.io/f/xyyvreja" method="post">
+            <fieldset>
+                <legend><b>Persoonlijke Gegevens</b></legend>
+                <br>
+                <label for="naam">Naam: </label>
+                <input type="text" name="naam" id="naam" placeholder="Volledige naam">
+                <br><br>
+                <label for="aanhef">Aanhef: </label>
+                <input type="radio" name="aanhef" id="aanhef" value="Mr" checked>Mr
+                <input type="radio" name="aanhef" id="aanhef" value="Mw">Mw
+                <input type="radio" name="aanhef" id="aanhef" value="Dhr">Dhr
+                <br>
+                <br>
+                <label for="straat">Adres: </label>
+                <input type="text" name="adres" id="straat" placeholder="Straat en huisnr">
+                <br>
+                <br>
+                <label for="postcode">Postcode en woonplaats: </label>
+                <input type="text" name="postcode" id="postcode" placeholder="Postcode">
+                <label for="woonplaats"></label>
+                <input type="text" name="woonplaats" id="woonplaats" placeholder="Woonplaats">
+                <br><br>
+                <label for="telnr">Telefoonnummer: </label>
+                <input type="tel" name="nummer" id="telnr">
+                <br><br>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email">
+                <br>
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><b>Beschrijving klachten</b></legend>
+                <label for="klachten">Selecteer relevante klachten: </label><br>
+                <input type="checkbox" name="klachten" id="klachten" value="ja">Kiespijn
+                <input type="checkbox" name="klachten" id="klachten" value="ja">Gevoeligheid bij hoge/lage temperaturen
+                <input type="checkbox" name="klachten" id="klachten" value="ja">Gevoelig tandvlees
+                <input type="checkbox" name="klachten" id="klachten" value="ja">Afgebroken tand(en)
+                <br><br>
+                <label for="fotobestand">Upload een foto indien beschikbaar: </label><br>
+                <input type="file" name="" id="">
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><b>Toelichting klachten</b></legend>
+                <br>
+                <textarea max="1500" name="details" cols="30" rows="10" placeholder="Beschrijf de klachten in meer detail"></textarea>
+                <br><br>
+                <label for="datum">Datum afspraak</label>
+                <input type="date" name="datum" id="datum" max="2080-12-31">
+                <br>            
+            </fieldset>
+            <br>
+            <input type="submit" name="submit" value="Verzend">
+        </form>
+    </body>
+</html>
